@@ -5,21 +5,21 @@
 class GitWrapped < Formula
   desc "Spotify Wrapped, but for your GitHub year"
   homepage "https://github.com/vaibhav0806/git-wrapped"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vaibhav0806/git-wrapped/releases/download/v0.1.1/git-wrapped_darwin_amd64.tar.gz"
-      sha256 "c83406a82d49a616866c4efb6afb9f0555b4c0670d2c8b2c658353db8c6b0cb8"
+      url "https://github.com/vaibhav0806/git-wrapped/releases/download/v0.1.2/git-wrapped_darwin_amd64.tar.gz"
+      sha256 "4779db5f4f030c16660f979904bf9516adad3ada838bd4d5080dfe948c19ead5"
 
       define_method(:install) do
         bin.install "git-wrapped"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vaibhav0806/git-wrapped/releases/download/v0.1.1/git-wrapped_darwin_arm64.tar.gz"
-      sha256 "2db94fa7b42427e80664bef4ce582ec54871ccc34e2b5867f765d1ab4cfd4d43"
+      url "https://github.com/vaibhav0806/git-wrapped/releases/download/v0.1.2/git-wrapped_darwin_arm64.tar.gz"
+      sha256 "71ba5a0792094c82d0d1d0782b2c569657aad1353c44f27a78a42770081f2ff2"
 
       define_method(:install) do
         bin.install "git-wrapped"
@@ -29,15 +29,15 @@ class GitWrapped < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vaibhav0806/git-wrapped/releases/download/v0.1.1/git-wrapped_linux_amd64.tar.gz"
-      sha256 "1fc2e4d195ee7294a571a0b422933ccd87e594a7dd6492570836742f2898fe0d"
+      url "https://github.com/vaibhav0806/git-wrapped/releases/download/v0.1.2/git-wrapped_linux_amd64.tar.gz"
+      sha256 "54635c8d2d4881c841716fc28cca8162b4a63d6cc9a5f52fd87f1b4932e12488"
       define_method(:install) do
         bin.install "git-wrapped"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vaibhav0806/git-wrapped/releases/download/v0.1.1/git-wrapped_linux_arm64.tar.gz"
-      sha256 "bcf83e1e2d6c4bb2eabaa36f9b158f3f034fe86d267c9cad545be9ef223aba96"
+      url "https://github.com/vaibhav0806/git-wrapped/releases/download/v0.1.2/git-wrapped_linux_arm64.tar.gz"
+      sha256 "cf5c54ba4319351172925a2a0ce7ca2b5bbe81d7fcfb5ce5ecc5b3be55ef3e9e"
       define_method(:install) do
         bin.install "git-wrapped"
       end
