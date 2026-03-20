@@ -5,13 +5,13 @@
 class PixelTamagotchi < Formula
   desc "A tamagotchi cat that lives in your terminal"
   homepage "https://github.com/vaibhav0806/pixel-tamagotchi"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vaibhav0806/pixel-tamagotchi/releases/download/v0.5.1/pixel-tamagotchi_darwin_amd64.tar.gz"
-      sha256 "30f0e77841644cef93acff2bae629ca0c2ffc42336952b91a6c31ecf8c5670dd"
+      url "https://github.com/vaibhav0806/pixel-tamagotchi/releases/download/v0.6.0/pixel-tamagotchi_darwin_amd64.tar.gz"
+      sha256 "abe91eb40b25c304862872417fffcda5d54d9c555d3c2ff85224d505634d258b"
 
       define_method(:install) do
         bin.install "pixel-tamagotchi"
@@ -19,8 +19,8 @@ class PixelTamagotchi < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vaibhav0806/pixel-tamagotchi/releases/download/v0.5.1/pixel-tamagotchi_darwin_arm64.tar.gz"
-      sha256 "920c62dfe7aee97d30b61477efd341e889a0b0fe1b2099b3603360e766360e77"
+      url "https://github.com/vaibhav0806/pixel-tamagotchi/releases/download/v0.6.0/pixel-tamagotchi_darwin_arm64.tar.gz"
+      sha256 "cc7d1eb2144df4875ce96efac33efef2e60eeefcdd0b5aeeb4562a49474cdd23"
 
       define_method(:install) do
         bin.install "pixel-tamagotchi"
@@ -31,16 +31,16 @@ class PixelTamagotchi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vaibhav0806/pixel-tamagotchi/releases/download/v0.5.1/pixel-tamagotchi_linux_amd64.tar.gz"
-      sha256 "7ab4821a8d936bc5baec2f63e3e1c21ae0c0891a56064fdd00a25b18f82058f6"
+      url "https://github.com/vaibhav0806/pixel-tamagotchi/releases/download/v0.6.0/pixel-tamagotchi_linux_amd64.tar.gz"
+      sha256 "74f4a67ea792d9d49fe80b436df333a9403fd6debfda2b7aa1a626a6b8037c92"
       define_method(:install) do
         bin.install "pixel-tamagotchi"
         bin.install_symlink "pixel-tamagotchi", "pixel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vaibhav0806/pixel-tamagotchi/releases/download/v0.5.1/pixel-tamagotchi_linux_arm64.tar.gz"
-      sha256 "09591cf96f5fd3a5550bacd8bd81ea44d23c49de73efad21475e97f58b98b97a"
+      url "https://github.com/vaibhav0806/pixel-tamagotchi/releases/download/v0.6.0/pixel-tamagotchi_linux_arm64.tar.gz"
+      sha256 "5d67b8d3c8d3af2a3741a6264ed9508909ab50caf60f760c7b70856f4dea07fd"
       define_method(:install) do
         bin.install "pixel-tamagotchi"
         bin.install_symlink "pixel-tamagotchi", "pixel"
